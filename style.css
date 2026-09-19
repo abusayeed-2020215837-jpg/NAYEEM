@@ -37,7 +37,7 @@ font-size:18px;
 
 .hero{
 
-height:520px;
+height:280px;
 
 background:
 linear-gradient(
@@ -52,14 +52,14 @@ background-position:center;
 color:white;
 text-align:center;
 
-padding-top:160px;
+padding-top:90px;
 
 }
 
 
 .hero h1{
 
-font-size:55px;
+font-size:38px;
 font-weight:400;
 
 }
@@ -67,7 +67,7 @@ font-weight:400;
 
 .hero h2{
 
-font-size:28px;
+font-size:20px;
 font-weight:300;
 
 }
@@ -75,7 +75,7 @@ font-weight:300;
 
 .hero h3{
 
-font-size:22px;
+font-size:16px;
 font-weight:300;
 
 }
