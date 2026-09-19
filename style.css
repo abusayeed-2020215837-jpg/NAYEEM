@@ -1,438 +1,151 @@
-*{
-box-sizing:border-box;
-}
+<!DOCTYPE html>
+<html>
 
-body{
-margin:0;
-font-family:'Josefin Sans',sans-serif;
-color:#333;
-}
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-nav{
-position:absolute;
-top:0;
-width:100%;
-padding:25px 6%;
-display:flex;
-justify-content:space-between;
-color:white;
-z-index:10;
-}
+<title>Research & Projects | Abu Sayeed Nayeem</title>
 
-.research-projects{
+<link rel="stylesheet" href="style.css">
 
-padding:80px 12%;
-}
+</head>
 
 
-.project-item{
+<body>
 
-display:flex;
-align-items:center;
-gap:50px;
 
-}
+<nav>
 
+<div class="logo">
+Abu Sayeed Nayeem
+</div>
 
-.project-image{
 
-width:45%;
+<div class="menu">
 
-}
+<a href="index.html">Home</a>
 
+<a href="research-projects.html">
+Research & Projects
+</a>
 
-.project-image img{
+<a href="education.html">
+Education
+</a>
 
-width:100%;
-border-radius:3px;
+<a href="cv.html">
+CV
+</a>
 
-}
+<a href="contact.html">
+Contact
+</a>
 
+</div>
 
-.project-content{
+</nav>
 
-width:55%;
 
-}
 
+<!-- HERO BANNER -->
 
-.project-content h2{
+<section class="research-banner">
 
-font-size:32px;
-font-weight:400;
-color:#111;
+<h1>
+Research & Projects
+</h1>
 
-}
+</section>
 
 
-.project-content h4{
 
-font-size:18px;
-font-weight:400;
+<!-- PROJECT DESCRIPTION -->
 
-}
+<section class="research-container">
 
 
-.project-content p{
+<h2>
+Material Synthesis and Characterization
+</h2>
 
-font-size:17px;
-line-height:1.8;
-color:#222;
 
-}
+<h4>
+Research Assistant | Materials Science Research Laboratory, University of Dhaka
+</h4>
 
 
-.image-gallery{
 
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:30px;
-margin-top:40px;
+<p>
 
-}
+My research focuses on the synthesis and characterization of functional semiconductor materials for energy and environmental applications. I work on preparing semiconductor samples through controlled experimental processes and investigating their structural, optical, and electronic properties. To accelerate materials discovery, I utilize machine learning approaches for property prediction and data-driven analysis of functional materials. The research combines experimental characterization techniques with computational approaches, including density functional theory (DFT) simulations. The ultimate goal is to develop efficient semiconductor materials for sustainable energy conversion and next-generation electronic applications.
 
+</p>
 
-.image-gallery img{
 
-width:100%;
-height:140px;
-object-fit:cover;
 
-}
+<!-- IMAGE GALLERY -->
 
 
-@media(max-width:800px){
+<div class="research-gallery">
 
-.project-item{
 
-display:block;
+<div class="research-card">
 
-}
+<img src="sample-preparation.jpg">
 
-.project-image,
-.project-content{
+<h3>
+Sample Preparation
+</h3>
 
-width:100%;
+<p>
+Preparation of semiconductor samples under controlled experimental conditions.
+</p>
 
-}
+</div>
 
-}
-.logo{
-font-size:24px;
-}
 
 
-.menu a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-size:18px;
-}
+<div class="research-card">
 
+<img src="material-synthesis.jpg">
 
+<h3>
+Material Synthesis
+</h3>
 
-.hero{
+<p>
+Synthesis and thermal treatment of functional semiconductor materials.
+</p>
 
-height:280px;
+</div>
 
-background:
-linear-gradient(
-rgba(0,0,0,.65),
-rgba(0,0,0,.65)
-),
-url('https://images.unsplash.com/photo-1532094349884-543bc11b234d');
 
-background-size:cover;
-background-position:center;
 
-color:white;
-text-align:center;
+<div class="research-card">
 
-padding-top:90px;
+<img src="characterization.jpg">
 
-}
+<h3>
+Characterization
+</h3>
 
+<p>
+Structural, optical, and electronic analysis of synthesized materials.
+</p>
 
-.hero h1{
+</div>
 
-font-size:38px;
-font-weight:400;
 
-}
 
+</div>
 
-.hero h2{
 
-font-size:20px;
-font-weight:300;
+</section>
 
-}
 
 
-.hero h3{
+</body>
 
-font-size:16px;
-font-weight:300;
-
-}
-
-
-
-.hero blockquote{
-
-font-size:20px;
-margin-top:35px;
-
-}
-
-
-
-
-.about{
-
-display:flex;
-align-items:center;
-
-padding:70px 10%;
-
-background:#f7f7f5;
-
-gap:70px;
-
-}
-
-
-
-.about-text{
-
-width:65%;
-
-}
-
-
-.about-text p{
-
-font-size:21px;
-
-line-height:1.7;
-
-letter-spacing:.3px;
-
-font-weight:300;
-
-}
-
-
-
-.about-image{
-
-width:35%;
-
-}
-
-
-.about-image img{
-
-width:100%;
-
-border-radius:5px;
-
-}
-
-
-
-.learn-btn{
-
-display:inline-block;
-
-border:1px solid #555;
-
-padding:12px 30px;
-
-text-decoration:none;
-
-color:#333;
-
-font-size:18px;
-
-}
-
-
-
-@media(max-width:800px){
-
-.about{
-
-display:block;
-
-}
-
-.about-text,
-.about-image{
-
-width:100%;
-
-}
-
-}
-.page{
-
-padding:120px 10% 70px;
-background:#f7f7f5;
-
-}
-
-
-.page h1{
-
-font-size:45px;
-font-weight:500;
-margin-bottom:50px;
-
-}
-
-
-.project{
-
-margin-bottom:45px;
-
-}
-
-
-.project h2{
-
-font-size:28px;
-font-weight:500;
-color:#111;
-
-}
-
-
-.project p{
-
-font-size:19px;
-line-height:1.8;
-color:#222;
-font-weight:400;
-max-width:900px;
-
-}
-.research-hero{
-
-height:260px;
-
-background:
-linear-gradient(
-rgba(0,0,0,.6),
-rgba(0,0,0,.6)
-),
-url('material-synthesis.jpg');
-
-background-size:cover;
-background-position:center;
-
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-
-color:white;
-
-}
-
-
-.research-hero h1{
-
-font-size:48px;
-font-weight:400;
-
-}
-
-
-.research-hero p{
-
-font-size:18px;
-letter-spacing:3px;
-
-}
-
-
-
-.research-content{
-
-padding:60px 10%;
-
-}
-
-
-
-.research-content h2{
-
-font-size:34px;
-font-weight:400;
-
-}
-
-
-.research-content h4{
-
-font-size:18px;
-font-weight:400;
-
-}
-
-
-
-.research-content p{
-
-font-size:18px;
-line-height:1.8;
-
-}
-
-
-
-.research-gallery{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-margin-top:50px;
-
-}
-
-
-
-.research-gallery img{
-
-width:100%;
-
-height:220px;
-
-object-fit:cover;
-
-}
-
-
-
-.research-gallery h3{
-
-font-weight:400;
-text-align:center;
-
-}
-
-
-@media(max-width:800px){
-
-.research-gallery{
-
-grid-template-columns:1fr;
-
-}
-
-}
+</html>
